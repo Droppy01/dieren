@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?php
 
 
@@ -40,4 +41,15 @@ class BezoekerController
             $this->vraagAction();
         }
     }
+=======
+<?php
+
+
+namespace controls;
+
+
+class BezoekerController
+{
+
+>>>>>>> 92d599c727456676fc3b901183a739eca0ab4575
 }
