@@ -1,29 +1,21 @@
-<?php
 
-    spl_autoload_register("loadClass");
+                <?php
+                    spl_autoload_register("loadClass");
 
-    function loadClass($class)
-    {
-        include __NAMESPACE__ .$class.'.php';
-    }
+                    function loadClass($class)
+                    {
+                        include __NAMESPACE__ .$class.'.php';
+                    }
 
-    if(isset($_POST['dier'])){
-        $bijdrage = $_POST['dier'];
-        $klassenaam = "models\\".$bijdrage;
+                    if(isset($_REQUEST['controller']))
+                    {
+                        $control = $_POST['controller'];
+                        $controllerFullName = "controls\\".$control."Controller";
+                    }
+                    else {
+                        $controllerFullName = "controls\\BezoekerController";
+                    }
 
-        $fabriek = new models\DierenFabriek();
+                    $controller = new $controllerFullName();
 
-        $dier = $fabriek->maakDier($klassenaam);
-        echo $dier->maakGeluid();
-    }
-
-    ?>
-<!doctype html>
-    <html>
-        <body>
-            <form method="post">
-                <input type="text" name="dier"/>
-                <input type="submit" value="klikme"/>
-            </form>
-        </body>
-    </html>
+                    $controller->voeruit();
