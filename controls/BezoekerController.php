@@ -25,11 +25,12 @@ class BezoekerController
 
     public function toonAction():void
     {
-        $bijdrage = $_POST['dier'];
-
         //please validate user's input
 
         try {
+            $bijdrage = $_POST['dier'];
+
+        
             switch ($bijdrage) {
                 case "Schaap" : 
                     break;
@@ -40,7 +41,7 @@ class BezoekerController
                 case "Paard" : 
                     break;
                 default:
-                    throw new Exception("$bijdrage bestaat niet") ;
+                    throw new Exception("\"$bijdrage\" bestaat niet") ;
                     break;
             }
             $dier = $this->fabriek->maakDier($bijdrage);

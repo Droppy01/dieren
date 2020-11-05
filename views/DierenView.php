@@ -22,7 +22,7 @@ class DierenView
                         <div><input type="hidden" name="actie" value ="toon"/></div>
                         <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
                         <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                        <div<input type="radio" name="dier" value="Geit"/><label>Geit</label>></div>
+                        <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
                         <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
                         <div><input type="submit" value="klikme"/></div>
                     </form>
@@ -61,7 +61,7 @@ EOT;
                     <h1>An ERROR has occurred</h1>
                     <p> at {$error->getFile() }:{$error->getLine()}</p>
                     <p> error Message: {$error->getMessage()} </p>
-                    <a onclick"Console.log( "oke");"> retry </a>
+                    <a href="."> retry </a>
                 </body>
             </html>
         EQT;
