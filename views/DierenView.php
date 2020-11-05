@@ -3,6 +3,7 @@
 
 namespace views;
 
+use Exception;
 use models\Dier;
 
 class DierenView
@@ -18,7 +19,7 @@ class DierenView
                         <form method='post'>
                             <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
                             <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                            <div<input type="radio" name="dier" value="Geit"/><label>Geit</label>></div>
+                            <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
                             <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
                             <div><input type="submit" value="klikme"/></div>
                         </form>
@@ -45,5 +46,21 @@ EOT;
                </body>
         </html>
 EOT;
+    }
+    public function Error(Exception $error){
+        http_response_code(500);
+        echo <<<EQT
+            <!doctype html>
+            <html>
+                <body>
+                    <h1>An ERROR has occurred</h1>
+                    <p> at {$error->getFile() }:{$error->getLine()}</p>
+                    <p> error Message: {$error->getMessage()} </p>
+                    <a href="."> retry </a>
+                </body>
+            </html>
+                    
+
+        EQT;
     }
 }
