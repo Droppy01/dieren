@@ -11,7 +11,7 @@ class Koe extends ZichtbaarDier implements Dier
 
 
     public function __construct(){
-        $this->image = "Koe.jpg";
+
     }
 
 

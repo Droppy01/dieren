@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="57eb1a4e-52cd-425f-9238-c371efabd9cb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dieren.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/controls/BezoekerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/DierenView.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/DierenFabriek.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/DierenFabriek.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/models/Koe.php" beforeDir="false" afterPath="$PROJECT_DIR$/models/Koe.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -69,6 +61,7 @@
       <workItem from="1603976026469" duration="1108000" />
       <workItem from="1603981919778" duration="144000" />
       <workItem from="1604561974865" duration="6144000" />
+      <workItem from="1604584885979" duration="121000" />
     </task>
     <servers />
   </component>
