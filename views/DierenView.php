@@ -6,6 +6,7 @@ namespace views;
 use Exception;
 use models\Dier;
 
+
 class DierenView
 {
     public function toon( Dier $dier)
@@ -17,12 +18,14 @@ class DierenView
                     <body>
                         <p>{$dier->maakGeluid()}</p>
                         <form method='post'>
-                            <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
-                            <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                            <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
-                            <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
-                            <div><input type="submit" value="klikme"/></div>
-                        </form>
+                        <div><input type="hidden" name="controller" value ="Bezoeker"/></div>
+                        <div><input type="hidden" name="actie" value ="toon"/></div>
+                        <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
+                        <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
+                        <div<input type="radio" name="dier" value="Geit"/><label>Geit</label>></div>
+                        <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
+                        <div><input type="submit" value="klikme"/></div>
+                    </form>
                     </body>
                 </html>
 EOT;
@@ -37,12 +40,14 @@ EOT;
                             welk dier wil je horen?
                         </p>
                         <form method='post'>
-                            <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
-                            <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                            <div<input type="radio" name="dier" value="Geit"/><label>Geit</label>></div>
-                            <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
-                            <div><input type="submit" value="klikme"/></div>
-                        </form>
+                        <div><input type="hidden" name="controller" value ="Bezoeker"/></div>
+                        <div><input type="hidden" name="actie" value ="toon"/></div>
+                        <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
+                        <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
+                        <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
+                        <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
+                        <div><input type="submit" value="klikme"/></div>
+                    </form>
                </body>
         </html>
 EOT;
@@ -56,11 +61,9 @@ EOT;
                     <h1>An ERROR has occurred</h1>
                     <p> at {$error->getFile() }:{$error->getLine()}</p>
                     <p> error Message: {$error->getMessage()} </p>
-                    <a href="."> retry </a>
+                    <a onclick"Console.log( "oke");"> retry </a>
                 </body>
             </html>
-                    
-
         EQT;
     }
 }

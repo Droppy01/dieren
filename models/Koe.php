@@ -7,7 +7,7 @@ namespace models;
 class Koe extends ZichtbaarDier implements Dier
 {
 
-
+    private $image;
 
 
     public function __construct(){
