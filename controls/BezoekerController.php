@@ -28,7 +28,12 @@ class BezoekerController
         //please validate user's input
 
         try {
-            $bijdrage = $_POST['dier'];
+            if (isset($_POST['dier'])){
+                $bijdrage = $_POST['dier'];
+            } else {
+                $bijdrage = "null"; // for a better error msg
+            }
+            
 
         
             switch ($bijdrage) {
@@ -39,6 +44,8 @@ class BezoekerController
                 case "Geit" : 
                     break;
                 case "Paard" : 
+                    break;
+                case "vos" : 
                     break;
                 default:
                     throw new Exception("\"$bijdrage\" bestaat niet") ;

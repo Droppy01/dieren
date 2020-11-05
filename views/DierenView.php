@@ -24,6 +24,7 @@ class DierenView
                         <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
                         <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
                         <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
+                        <div><input type="radio" name="dier" value="vos"/><label>vos</label></div>
                         <div><input type="submit" value="klikme"/></div>
                     </form>
                     </body>
@@ -46,6 +47,7 @@ EOT;
                         <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
                         <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
                         <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
+                        <div><input type="radio" name="dier" value="vos"/><label>vos</label></div>
                         <div><input type="submit" value="klikme"/></div>
                     </form>
                </body>
