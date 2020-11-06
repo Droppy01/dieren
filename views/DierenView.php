@@ -18,14 +18,14 @@ class DierenView
                     <body>
                         <p>{$dier->maakGeluid()}</p>
                         <form method='post'>
-                        <div><input type="hidden" name="controller" value ="Bezoeker"/></div>
-                        <div><input type="hidden" name="actie" value ="toon"/></div>
-                        <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
-                        <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                        <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
-                        <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
-                        <div><input type="radio" name="dier" value="vos"/><label>vos</label></div>
-                        <div><input type="submit" value="klikme"/></div>
+                        <input type="hidden" name="controller" value ="Bezoeker"/><br>
+                        <input type="hidden" name="actie" value ="toon"/><br>
+                        <input type="radio" name="dier" value="Koe"/><label>Koe</label><br>
+                        <input type="radio" name="dier" value="Schaap"/><label>Schaap</label><br>
+                        <input type="radio" name="dier" value="Geit"/><label>Geit</label><br>
+                        <input type="radio" name="dier" value="Paard"/><label>Paard</label><br>
+                        <input type="radio" name="dier" value="vos"/><label>vos</label><br>
+                        <input type="submit" value="klikme"/>
                     </form>
                     </body>
                 </html>
@@ -41,14 +41,14 @@ EOT;
                             welk dier wil je horen?
                         </p>
                         <form method='post'>
-                        <div><input type="hidden" name="controller" value ="Bezoeker"/></div>
-                        <div><input type="hidden" name="actie" value ="toon"/></div>
-                        <div><input type="radio" name="dier" value="Koe"/><label>Koe</label></div>
-                        <div><input type="radio" name="dier" value="Schaap"/><label>Schaap</label></div>
-                        <div><input type="radio" name="dier" value="Geit"/><label>Geit</label></div>
-                        <div><input type="radio" name="dier" value="Paard"/><label>Paard</label></div>
-                        <div><input type="radio" name="dier" value="vos"/><label>vos</label></div>
-                        <div><input type="submit" value="klikme"/></div>
+                        <input type="hidden" name="controller" value ="Bezoeker"/><br>
+                        <input type="hidden" name="actie" value ="toon"/><br>
+                        <input type="radio" name="dier" value="Koe"/><label>Koe</label><br>
+                        <input type="radio" name="dier" value="Schaap"/><label>Schaap</label><br>
+                        <input type="radio" name="dier" value="Geit"/><label>Geit</label><br>
+                        <input type="radio" name="dier" value="Paard"/><label>Paard</label><br>
+                        <input type="radio" name="dier" value="vos"/><label>vos</label><br>
+                        <input type="submit" value="klikme"/>
                     </form>
                </body>
         </html>
